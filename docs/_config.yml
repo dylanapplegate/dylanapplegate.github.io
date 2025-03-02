@@ -34,6 +34,10 @@ url: https://dylanapplegate.github.io # the base hostname and protocol for your 
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
+remote_theme: broccolini/swiss
+theme_color: magenta
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
