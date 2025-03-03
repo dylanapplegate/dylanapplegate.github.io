@@ -6,10 +6,6 @@ author: 'Dylan Applegate'
 tags: introduction, blog, technology
 ---
 
-# Welcome to My Blog 🚀
-
-Hey there! 👋 Welcome!
-
 This blog is where I document my **thoughts, experiments, and insights** on technology, software development, and beyond. Whether it's deep dives into engineering challenges, explorations of new tools, or reflections on the creative process, my goal is to make this a **space for learning and sharing**.
 
 ## What to Expect Here
