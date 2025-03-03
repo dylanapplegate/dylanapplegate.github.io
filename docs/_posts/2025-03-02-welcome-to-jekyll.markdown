@@ -1,29 +1,31 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2025-03-02 15:06:26 -0700
-categories: jekyll update
+title: 'Welcome to My Blog'
+date: 2025-03-02
+author: 'Your Name'
+tags: introduction, blog, technology
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+# Welcome to My Blog 🚀
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Hey there! 👋 Welcome to my little corner of the internet.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+This blog is where I document my **thoughts, experiments, and insights** on technology, software development, and beyond. Whether it's deep dives into engineering challenges, explorations of new tools, or reflections on the creative process, my goal is to make this a **space for learning and sharing**.
 
-Jekyll also offers powerful support for code snippets:
+## What to Expect Here
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Here are some of the things I'll be writing about:
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+- ✅ **Engineering & Development** – Topics on programming, system design, and tech stacks.
+- ✅ **Projects & Experiments** – Things I'm building, breaking, and learning from.
+- ✅ **Ideas & Insights** – Concepts that make me think and inspire new perspectives.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## Why This Blog?
+
+Writing is a way to **solidify ideas, share knowledge, and connect with others**. This space is my digital garden—a place where ideas grow, evolve, and (hopefully) spark meaningful conversations.
+
+## Let’s Connect
+
+If anything here resonates with you, I’d love to chat! You can find me on [GitHub](https://github.com/yourusername) or reach out via [contact](/contact).
+
+Thanks for stopping by, and let’s build something cool together! 🚀
