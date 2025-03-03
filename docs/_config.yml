@@ -21,7 +21,7 @@
 title: DAPPL3
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Dylan Applegate - exploring technology, software engineering, and creative problem-solving. This blog is a space for insights, experiments, and sharing ideas that shape the future of development.
+  Dylan Applegate - exploring technology, software engineering, and creative problem-solving.
 baseurl: '' # the subpath of your site, e.g. /blog
 github_username: dylanapplegate
 github_repo: dylanapplegate.github.io
