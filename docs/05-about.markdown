@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Welcome to my corner of the internet. This blog is a place where I document my thoughts, experiments, and ideas about technology, software development, and beyond.
+This blog is a place where I document my thoughts, experiments, and ideas about technology, software development, and beyond.
 
 I believe in simplicity, clarity, and lifelong learning. My goal is to share insights that are practical, interesting, or just make you think.
 
