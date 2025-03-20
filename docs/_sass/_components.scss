@@ -2,22 +2,24 @@
 
 // Code formatting
 pre {
-    border-left: $spacer-1 solid $color-border;
-    margin: $spacer-3 0;
-    padding-left: 16px;
-    width: (9 / 12 * 100%); // matches col-9
-    overflow-x: auto;
+  background: #282a36;
+  color: #f8f8f2;
+  border-radius: 5px;
+  padding: 16px;
+  overflow-x: auto;
 }
 
 code {
-    color: $color-code;
-    font-size: $body-font-size;
-    padding: 1px 0px;
+  font-family: "Fira Code", monospace;
+  color: #f8f8f2;
 }
 
+pre code {
+  display: block;
+  white-space: pre;
+}
 
 .prose {
-
   a {
     text-decoration: underline dotted;
 
@@ -26,7 +28,9 @@ code {
     }
   }
 
-  p, ol, ul {
+  p,
+  ol,
+  ul {
     font-size: $prose-font-size;
     margin-bottom: 1em;
     width: 100%;
@@ -34,29 +38,30 @@ code {
     @media (min-width: $breakpoint-lg) {
       width: (10 / 12 * 100%); // matches col-10
     }
-
   }
 
-  ul, ol {
+  ul,
+  ol {
     padding-left: 40px;
   }
 
   li {
     margin-bottom: 0.5em;
 
-    ul li, ol li {
+    ul li,
+    ol li {
       margin-bottom: 0;
     }
   }
 
   img {
-
     max-width: 100%;
 
     @media (min-width: $breakpoint-lg) {
-      max-width: (12 / 10 * 100%); // make image fill width of container on desktop
+      max-width: (
+        12 / 10 * 100%
+      ); // make image fill width of container on desktop
     }
-
   }
 
   blockquote {
@@ -78,9 +83,7 @@ code {
       p {
         font-size: 32px;
       }
-
     }
-
   }
 
   hr {
@@ -135,5 +138,18 @@ code {
       border-bottom: 2px solid $color-body-text;
     }
   }
+}
+.featured-image {
+  display: flex; // Centers the image inside the container
+  justify-content: center; // Horizontally center
+  align-items: center; // Align vertically if needed
+  margin-bottom: 2rem; // Adds spacing between the image and the article content
+  overflow: hidden; // Prevents any overflow if needed
 
+  img {
+    max-width: 100%; // Ensures responsiveness
+    height: auto; // Maintains aspect ratio
+    border-radius: 8px; // Optional: Adds subtle rounded corners for a polished look
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Optional: Adds a subtle shadow for depth
+  }
 }
