@@ -2,20 +2,21 @@
 
 // Color variables
 $black: #181818;
-$red: #E74727;
-$red-small: #DC3918;
+$red: #e74727;
+$red-small: #dc3918;
+$magenta: #cd2da8;
 $white: #fff;
 
 // Config
 $color-background: $black !default;
-$color-dot-accent: $red !default;
+$color-dot-accent: $magenta !default;
 $color-foreground: $white !default;
 $color-title: $white !default;
 $color-body-text: $black !default;
-$color-text-accent: $red !default;
-$color-code: $red-small !default;
-$color-nav-link: $red !default;
-$color-primary-link: $red !default;
+$color-text-accent: $magenta !default;
+$color-code: $magenta !default;
+$color-nav-link: $magenta !default;
+$color-primary-link: $magenta !default;
 
 .font-smoothing {
   -webkit-font-smoothing: antialiased;
@@ -23,9 +24,4 @@ $color-primary-link: $red !default;
 }
 
 // Import sass partials (used in all themes)
-@import
-        "variables",
-        "base",
-        "components",
-        "utilities"
-;
+@import "variables", "base", "components", "utilities";

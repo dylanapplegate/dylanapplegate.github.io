@@ -22,7 +22,7 @@ title: DAPPL3
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Dylan Applegate - exploring technology, software engineering, and creative problem-solving.
-baseurl: '' # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 github_username: dylanapplegate
 github_repo: dylanapplegate.github.io
 social_link: linkedin
@@ -38,7 +38,7 @@ plugins:
   - jekyll-remote-theme
 
 remote_theme: dylanapplegate/jekyll-theme-swiss
-theme_color: magenta
+theme_color: black
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

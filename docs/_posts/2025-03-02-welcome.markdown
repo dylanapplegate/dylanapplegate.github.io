@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Welcome to My Blog'
+title: "Welcome to My Blog"
 date: 2025-03-02
-author: 'Dylan Applegate'
+author: "Dylan Applegate"
 tags: introduction, blog, technology
 ---
 
@@ -12,9 +12,9 @@ This blog is where I document my **thoughts, experiments, and insights** on tech
 
 Here are some of the things I'll be writing about:
 
-- ✅ **Engineering & Development** – Topics on programming, system design, and tech stacks.
-- ✅ **Projects & Experiments** – Things I'm building, breaking, and learning from.
-- ✅ **Ideas & Insights** – Concepts that make me think and inspire new perspectives.
+- **Engineering & Development** – Topics on programming, system design, and tech stacks.
+- **Projects & Experiments** – Things I'm building, breaking, and learning from.
+- **Ideas & Insights** – Concepts that make me think and inspire new perspectives.
 
 ## Why This Blog?
 
