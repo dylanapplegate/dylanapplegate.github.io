@@ -5,17 +5,17 @@ description: "How I built a CLI-based productivity assistant using TypeScript, P
 tags: [TypeScript, CLI, AI, Prisma, LM Studio, Productivity]
 ---
 
-Over the past few days, I’ve been building a project that reflects both how I work and how I _want_ to work: **intentionally, locally, and with just enough automation** to stay focused.
+I’m building a local-first, AI-powered CLI productivity agent — one that’s purpose-built for developers, job seekers, and indie hackers who want to work with intention and without cloud dependencies.
 
-This is just the beginning — and it only took a day to get the first working version. My long-term goal is to turn this into a **full LM-powered personal agent** that helps me land a job or secure paid freelance work.
+The current version is just the seed of a much bigger vision: a personal AI assistant that understands your goals, suggests the most impactful task, and evolves to support job hunting, content creation, learning, and reflection — all running locally, with full privacy and no SaaS friction.
+
+It’s the productivity system I’ve always wanted: fast, grounded, offline, and extensible.
 
 ### 🚀 What I Built
 
-[`my-project-manager`](https://github.com/dylanapplegate/my-project-manager) is a **local-first, intelligent CLI-based task manager** designed to help developers (like me) stay grounded and goal-aware — even while offline.
+[`my-project-manager`](https://github.com/dylanapplegate/my-project-manager) is a **local-first, intelligent CLI-based task manager** — and the first building block in a much larger system.
 
-At its core, it's a task tracker with AI-powered suggestions. But more than that, it’s the first step in building a **CLI-native personal productivity agent**.
-
-If you're curious about where this project is going, check out the [full roadmap](https://github.com/dylanapplegate/my-project-manager/blob/main/roadmap.md) — it outlines the evolution from CLI utility to AI-powered assistant.
+At its core, it’s a task tracker with AI-powered prioritization. But over time, it will become a **goal-aware, locally hosted productivity agent** — supporting workflows like LeetCode, blogging, GitHub contributions, LinkedIn content, and even weekly reviews. All offline. All under your control.
 
 ---
 
@@ -69,15 +69,24 @@ Reasoning: You've completed related features, and this task ensures stability be
 
 It's not just cute — it helps me avoid decision fatigue and maintain momentum.
 
+### 🔮 Why This Matters
+
+Most productivity tools feel like bolt-ons or spreadsheets with a UI. I’m aiming to build something different — something _personal_.
+
+This project is meant to evolve into a trusted co-pilot: a task manager that not only tracks work, but understands your priorities, pace, and patterns. One that surfaces meaningful tasks without cloud lock-in, and grows with your goals.
+
+It’s open source, offline-first, and designed for the way real developers think.
+
 ---
 
 ### 📊 Testing and Reliability
 
 - 7 CLI commands and modules are fully unit tested with mocks for both **Prisma** and **LM Studio**
 - Edge cases like invalid inputs, empty task lists, and AI errors are covered
-- Tests run fast thanks to mocked databases and models
+- All external services (DB and AI models) are mocked, making tests fast, deterministic, and offline-capable
+- Tests run fast thanks to mocked databases and models, with over 98% total test coverage including edge cases, database errors, and AI failures
 
-This isn’t a throwaway tool — it’s production-grade even in its CLI form.
+This isn’t a throwaway tool — it’s production-grade even in its CLI form. The test suite makes sure it stays that way as features grow.
 
 ---
 
@@ -103,9 +112,11 @@ Introduce semantic filters and flows for common developer goals:
 
 Ultimately, I want this to evolve into a **personal productivity agent for developers, job seekers, and indie builders** — one that knows your goals, works offline, and keeps you focused on what truly matters. If it works, it won't just track tasks — it'll help me **earn income** and **regain financial stability**.
 
+Want to follow along? The GitHub roadmap is where I’m tracking every phase — from goal-based workflows to AI memory and reflection tools. There’s a lot coming.
+
 ---
 
-### 🔗 Try It or Star It
+### 🔗 Try It Locally (or Star It for Later)
 
 To get started quickly:
 
@@ -115,6 +126,7 @@ cd my-project-manager
 nvm use          # Sets Node.js version from .nvmrc
 npm install
 docker-compose up -d  # Starts PostgreSQL
+# Make sure you have a .env file with DATABASE_URL set
 npm start             # Runs the CLI
 ```
 
@@ -145,6 +157,19 @@ For example:
 ```bash
 npm start -- add "Write blog post" -d 2025-03-22
 ```
+
+### 🧠 Setting Up LM Studio
+
+To use the AI suggestion feature, you need to have [LM Studio](https://lmstudio.ai/) installed and running locally with a compatible model loaded.
+
+Recommended setup:
+
+1. **Download and install LM Studio** from [https://lmstudio.ai/](https://lmstudio.ai/).
+2. **Open LM Studio**, go to the "Models" tab, and download a compatible chat model such as `gemma:3-4b-it` or any local LLM that supports system + user prompts.
+3. Once downloaded, click **"Start Chat Server"**.
+4. Ensure LM Studio is running in the background while using the CLI.
+
+The CLI will send prompt text directly to LM Studio's local HTTP server. No cloud interaction required.
 
 Otherwise, install `tsx` globally and use the CLI directly:
 
