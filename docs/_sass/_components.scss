@@ -39,6 +39,10 @@ pre code {
     @media (min-width: $breakpoint-lg) {
       width: (10 / 12 * 100%); // matches col-10
     }
+
+    @media (max-width: $breakpoint-md) {
+      line-height: 1.6; /* Improve readability on smaller screens */
+    }
   }
 
   ul,
@@ -70,10 +74,15 @@ pre code {
   blockquote {
     line-height: 1.375;
     padding-left: 20px;
-    margin: 40px 0 40px -16px;
+    margin: 30px 0 30px -12px; /* Adjusted for better alignment on mobile */
     border-left: $spacer-1 solid $color-border;
     font-style: italic;
     margin-bottom: 1em; /* Added margin-bottom */
+
+    @media (max-width: $breakpoint-md) {
+      padding-left: 15px;
+      margin: 30px 0 30px -10px; /* Improve fit on small screens */
+    }
 
     p {
       font-size: 24px;
@@ -102,6 +111,10 @@ pre code {
 
   h2 {
     margin-bottom: 2em; /* Increased spacing for better section separation */
+
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 1.5em; /* Slightly reduce spacing for better mobile flow */
+    }
   }
 
   h3 {
@@ -109,10 +122,25 @@ pre code {
   }
 
   hr {
+    margin: 2.5em 0; /* Reduce extra spacing before/after section dividers */
     color: $color-body-text;
     border-style: solid;
     border-width: thin;
-    margin: 3em 0; /* Extra spacing before/after horizontal rules */
+
+    @media (max-width: $breakpoint-md) {
+      margin: 2em 0; /* Reduce excessive spacing on mobile */
+    }
+  }
+
+  h4 {
+    font-size: 1.25em; /* Slightly increase to emphasize key takeaways */
+    color: #bd93f9; /* Updated to Dracula's purple accent */
+    margin-top: 1.5em; /* Reduced from 2em for tighter spacing */
+
+    @media (max-width: $breakpoint-md) {
+      font-size: 1.1em; /* Slightly smaller headings for mobile */
+      color: #ff79c6; /* Adjust to another Dracula accent color for better contrast */
+    }
   }
 
   dt {
@@ -138,6 +166,13 @@ pre code {
     word-break: normal;
     word-break: keep-all;
 
+    @media (max-width: $breakpoint-md) {
+      max-width: 100%;
+      overflow-x: auto;
+      display: block;
+      word-break: break-word;
+    }
+
     th {
       font-weight: bold;
       text-align: left;
@@ -145,7 +180,7 @@ pre code {
 
     th,
     td {
-      padding: $spacer-3 $spacer-4; /* Added extra padding for better table readability */
+      padding: $spacer-2 $spacer-3; /* Reduce padding slightly for better compactness */
       border-top: 1px solid $color-body-text;
       border-bottom: 1px solid $color-body-text;
     }
