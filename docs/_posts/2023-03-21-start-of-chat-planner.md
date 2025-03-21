@@ -11,6 +11,8 @@ The current version is just the seed of a much bigger vision: a personal AI assi
 
 It’s the productivity system I’ve always wanted: fast, grounded, offline, and extensible.
 
+---
+
 ### 🚀 What I Built
 
 [`my-project-manager`](https://github.com/dylanapplegate/my-project-manager) is a **local-first, intelligent CLI-based task manager** — and the first building block in a much larger system.

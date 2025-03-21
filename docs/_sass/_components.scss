@@ -100,17 +100,16 @@ pre code {
   }
 
   h1,
-  h2,
   h3,
   h4,
   h5,
   h6,
   p {
-    margin: 2.5em 0 1.5em; /* Slightly increased spacing between sections */
+    margin: 1em 0 1em; /* Slightly increased spacing between sections */
   }
 
   h2 {
-    margin-bottom: 2em; /* Increased spacing for better section separation */
+    margin-bottom: 1em; /* Increased spacing for better section separation */
 
     @media (max-width: $breakpoint-md) {
       margin-bottom: 1.5em; /* Slightly reduce spacing for better mobile flow */
