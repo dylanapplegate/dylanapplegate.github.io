@@ -124,8 +124,32 @@ If you don’t want to install `tsx` globally, you can still run commands like:
 npm start -- add "Write blog post" -d 2025-03-22
 ```
 
-👉 [View full setup in README](https://github.com/dylanapplegate/my-project-manager#readme)
+👉 [View full setup and usage instructions in the README](https://github.com/dylanapplegate/my-project-manager#readme)
 
----
+### 🛠️ Installation Notes
 
-This project reflects how I want to build software: **thoughtful, testable, local-first, and empowering**. If you're interested in this kind of work — let's connect!
+This project uses a `.nvmrc` file to pin Node.js to version v23.9.0. If you're using `nvm`, run:
+
+```bash
+nvm use
+```
+
+If you're not using `tsx` globally, you can still run commands using:
+
+```bash
+npm start -- <command>
+```
+
+For example:
+
+```bash
+npm start -- add "Write blog post" -d 2025-03-22
+```
+
+Otherwise, install `tsx` globally and use the CLI directly:
+
+```bash
+npm install -g tsx
+npm link
+my-task-manager add "Write blog post" -d 2025-03-22
+```
