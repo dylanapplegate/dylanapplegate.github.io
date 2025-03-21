@@ -32,7 +32,8 @@ pre code {
   ol,
   ul {
     font-size: $prose-font-size;
-    margin-bottom: 1em;
+    margin-bottom: 2em; /* Increased margin-bottom */
+
     width: 100%;
 
     @media (min-width: $breakpoint-lg) {
@@ -43,6 +44,7 @@ pre code {
   ul,
   ol {
     padding-left: 40px;
+    /* Added margin-bottom */
   }
 
   li {
@@ -56,6 +58,7 @@ pre code {
 
   img {
     max-width: 100%;
+    margin-bottom: 1em; /* Added margin-bottom */
 
     @media (min-width: $breakpoint-lg) {
       max-width: (
@@ -70,6 +73,7 @@ pre code {
     margin: 40px 0 40px -16px;
     border-left: $spacer-1 solid $color-border;
     font-style: italic;
+    margin-bottom: 1em; /* Added margin-bottom */
 
     p {
       font-size: 24px;
@@ -86,18 +90,28 @@ pre code {
     }
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 2em 0 1em;
+  }
+
   hr {
     color: $color-body-text;
     border-style: solid;
     border-width: thin;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin: 2em 0;
   }
 
   dt {
     font-weight: bold;
     font-style: italic;
     line-height: 1.25;
+    margin-bottom: 0.5em; /* Added margin-bottom */
   }
 
   dd {
