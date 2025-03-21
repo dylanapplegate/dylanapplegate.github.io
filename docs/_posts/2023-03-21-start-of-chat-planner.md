@@ -27,6 +27,8 @@ If you're curious about where this project is going, check out the [full roadmap
 - **LM Studio SDK** for running AI models locally
 - **Commander.js** for intuitive CLI commands
 - **Jest** for 98%+ test coverage
+- `.nvmrc` for consistent Node.js versioning (`v23.9.0`)
+- `tsx` for executing ES module CLI commands
 
 ---
 
@@ -105,14 +107,24 @@ Ultimately, I want this to evolve into a **personal productivity agent for devel
 
 ### 🔗 Try It or Star It
 
-You can try it locally by cloning the repo and running:
+To get started quickly:
 
 ```bash
-docker-compose up
-npm run start
+git clone https://github.com/dylanapplegate/my-project-manager
+cd my-project-manager
+nvm use          # Sets Node.js version from .nvmrc
+npm install
+docker-compose up -d  # Starts PostgreSQL
+npm start             # Runs the CLI
 ```
 
-GitHub: [dylanapplegate/my-project-manager](https://github.com/dylanapplegate/my-project-manager)
+If you don’t want to install `tsx` globally, you can still run commands like:
+
+```bash
+npm start -- add "Write blog post" -d 2025-03-22
+```
+
+👉 [View full setup in README](https://github.com/dylanapplegate/my-project-manager#readme)
 
 ---
 
