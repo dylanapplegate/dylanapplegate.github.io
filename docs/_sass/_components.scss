@@ -32,8 +32,7 @@ pre code {
   ol,
   ul {
     font-size: $prose-font-size;
-    margin-bottom: 1.5em;
-    padding: 0 1em;
+    margin-bottom: 1em;
     width: 100%;
 
     @media (min-width: $breakpoint-lg) {
@@ -44,11 +43,10 @@ pre code {
   ul,
   ol {
     padding-left: 40px;
-    margin-bottom: 1em;
   }
 
   li {
-    margin-bottom: 0.75em;
+    margin-bottom: 0.5em;
 
     ul li,
     ol li {
