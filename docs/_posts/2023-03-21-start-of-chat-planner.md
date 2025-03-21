@@ -90,6 +90,18 @@ This isn’t a throwaway tool — it’s production-grade even in its CLI form. 
 
 ---
 
+### 🤖 On AI-Assisted Development
+
+While building this project, I adopted a hybrid workflow that combined traditional coding with [**vibe coding**](https://en.wikipedia.org/wiki/Vibe_coding) — a technique where AI tools (like custom GPTs or coding copilots) assist in code generation through natural-language prompts. This method allowed me to move faster during prototyping and automate repetitive boilerplate logic.
+
+But make no mistake: a large portion of the system was crafted through deliberate, manual engineering. Every AI-assisted section was reviewed, tested, and refined with care. I leaned on automation where it made sense — but always with a human in the loop to ensure clarity, correctness, and long-term maintainability.
+
+All of the tests, in particular, were written manually — not generated — to ensure complete clarity and intentional coverage.
+
+This blended approach reflects my philosophy toward modern software development: use the best tools available, but never lose sight of the craft.
+
+---
+
 ### 🛣️ The Road Ahead
 
 This CLI is just **Phase 1**. Here’s where the project is headed next:
