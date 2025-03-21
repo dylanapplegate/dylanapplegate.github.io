@@ -49,6 +49,17 @@ my-task-manager complete 3
 my-task-manager suggest
 ```
 
+### 🛠 CLI Commands Overview
+
+| Command                                    | Description                          |
+| ------------------------------------------ | ------------------------------------ |
+| `my-task-manager add "Task"`               | Adds a new task                      |
+| `my-task-manager add "Task" -d 2025-03-22` | Adds a task with a due date          |
+| `my-task-manager list`                     | Lists all pending tasks              |
+| `my-task-manager list --completed`         | Lists completed tasks                |
+| `my-task-manager complete 3`               | Marks task #3 as completed           |
+| `my-task-manager suggest`                  | Suggests the next best task using AI |
+
 The `suggest` command is where things get interesting: it queries the last 5 completed tasks and top 5 pending ones, then uses a local LM Studio model to recommend a single high-impact task. This happens entirely offline.
 
 ---
@@ -68,6 +79,8 @@ Reasoning: You've completed related features, and this task ensures stability be
 ```
 
 It's not just cute — it helps me avoid decision fatigue and maintain momentum.
+
+---
 
 ### 🔮 Why This Matters
 

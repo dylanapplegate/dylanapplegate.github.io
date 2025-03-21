@@ -32,7 +32,7 @@ pre code {
   ol,
   ul {
     font-size: $prose-font-size;
-    margin-bottom: 2em; /* Increased margin-bottom */
+    margin-bottom: 2.5em; /* Increased margin-bottom for better readability */
 
     width: 100%;
 
@@ -44,7 +44,7 @@ pre code {
   ul,
   ol {
     padding-left: 40px;
-    /* Added margin-bottom */
+    margin-bottom: 2em; /* Increased margin-bottom */
   }
 
   li {
@@ -97,14 +97,14 @@ pre code {
   h5,
   h6,
   p {
-    margin: 2em 0 1em;
+    margin: 2.5em 0 1.5em; /* Slightly increased spacing between sections */
   }
 
   hr {
     color: $color-body-text;
     border-style: solid;
     border-width: thin;
-    margin: 2em 0;
+    margin: 3em 0; /* Extra spacing before/after horizontal rules */
   }
 
   dt {
