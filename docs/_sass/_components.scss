@@ -100,6 +100,14 @@ pre code {
     margin: 2.5em 0 1.5em; /* Slightly increased spacing between sections */
   }
 
+  h2 {
+    margin-bottom: 2em; /* Increased spacing for better section separation */
+  }
+
+  h3 {
+    margin-bottom: 1.75em; /* Slightly increased spacing for readability */
+  }
+
   hr {
     color: $color-body-text;
     border-style: solid;
@@ -137,7 +145,7 @@ pre code {
 
     th,
     td {
-      padding: $spacer-2 $spacer-3 $spacer-2 2px;
+      padding: $spacer-3 $spacer-4; /* Added extra padding for better table readability */
       border-top: 1px solid $color-body-text;
       border-bottom: 1px solid $color-body-text;
     }
